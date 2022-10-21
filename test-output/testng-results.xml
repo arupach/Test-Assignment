@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-21T16:20:02Z" name="Suite" finished-at="2022-10-21T16:20:20Z" duration-ms="17401">
+    <groups>
+    </groups>
+    <test started-at="2022-10-21T16:20:02Z" name="Login" finished-at="2022-10-21T16:20:20Z" duration-ms="17401">
+      <class name="tests.Login">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.Login@409c54f]" started-at="2022-10-21T16:20:03Z" name="launchApplication" finished-at="2022-10-21T16:20:14Z" duration-ms="11305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:tests.Login@409c54f]" started-at="2022-10-21T16:20:14Z" name="login" data-provider="getData" finished-at="2022-10-21T16:20:17Z" duration-ms="3407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Nerist@123456, product=iPhone, email=arup.ach@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Login@409c54f]" started-at="2022-10-21T16:20:17Z" name="tearDown" finished-at="2022-10-21T16:20:20Z" duration-ms="2285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Login -->
+    </test> <!-- Login -->
+  </suite> <!-- Suite -->
+</testng-results>
