@@ -1,5 +1,10 @@
 package pageobjects;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,32 +38,37 @@ public class LandingPage extends AbstractComponent{
 	@FindBy(id="signInSubmit")
 	WebElement submit;
 	
-	@FindBy(css="[class*='flyInOut']")
-	WebElement errorMessage;
-
+	@FindBy(id="twotabsearchtextbox")
+	WebElement searchBar;
+	
+	@FindBy(id="nav-search-submit-button")
+	WebElement searchButton;
+	
+	@FindBy(id="nav-link-accountList-nav-line-1")
+	WebElement SignOn;
+	
+	
 	
 	public  void loginApplication(String email,String password)
 	{
+		SignOn.click();
 		userEmail.sendKeys(email);
 		continueButton.click();
 		passwordele.sendKeys(password);
 		submit.click();
 		
-//		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
-//		return productCatalogue;
-		
-		
 	}
 	
-	public String getErrorMessage()
+	public void goTo() throws IOException
 	{
-		waitForWebElementToAppear(errorMessage);
-		return errorMessage.getText();
-	}
-	
-	public void goTo()
-	{
-		driver.get("https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&");
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")
+				+ "//src//main//java//resources//GlobalData.properties");
+		prop.load(fis);
+		
+		String url = prop.getProperty("url");
+		
+		driver.get(url);
 	}
 	
 	

@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="testComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
+  <test thread-count="5" parallel="tests" name="Login(failed)">
     <classes>
-      <class name="tests.SubmitOrderTest">
+      <class name="tests.SearchAndAddToCart">
         <methods>
           <include name="tearDown"/>
           <include name="launchApplication"/>
-          <include name="submitOrder" invocation-numbers="0"/>
+          <include name="searchAndAddToCart" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.SubmitOrderTest -->
+      </class> <!-- tests.SearchAndAddToCart -->
     </classes>
-  </test> <!-- Submit Order Test(failed) -->
+  </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [Suite] -->

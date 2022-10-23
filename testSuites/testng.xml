@@ -3,15 +3,15 @@
 <suite parallel = "tests" name="Suite">
 
 <listeners>
-<listener class-name="testComponents.Listeners"/>
+	<listener class-name="testComponents.Listeners"/>
 </listeners>
 
-
-  <test name="Login">
+<test name="Login">
     <classes>
       <class name="tests.Login"/>
+      <class name="tests.SearchAndAddToCart"/>
     </classes>
-  </test> <!-- Test -->
+</test> <!-- Test -->
   
 </suite> <!-- Suite -->
 
