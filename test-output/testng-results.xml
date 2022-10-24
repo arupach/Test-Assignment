@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-23T12:31:05Z" name="Suite" finished-at="2022-10-23T12:32:27Z" duration-ms="81566">
+  <suite started-at="2022-10-23T15:41:24Z" name="Suite" finished-at="2022-10-23T15:42:48Z" duration-ms="83568">
     <groups>
     </groups>
-    <test started-at="2022-10-23T12:31:05Z" name="Login" finished-at="2022-10-23T12:32:27Z" duration-ms="81566">
+    <test started-at="2022-10-23T15:41:24Z" name="Login" finished-at="2022-10-23T15:42:48Z" duration-ms="83568">
       <class name="tests.Login">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.Login@4f6f416f]" started-at="2022-10-23T12:31:06Z" name="launchApplication" finished-at="2022-10-23T12:31:48Z" duration-ms="42449" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.Login@71e693fa]" started-at="2022-10-23T15:41:25Z" name="launchApplication" finished-at="2022-10-23T15:41:51Z" duration-ms="25849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:tests.Login@4f6f416f]" started-at="2022-10-23T12:31:48Z" name="login" data-provider="getData" finished-at="2022-10-23T12:31:55Z" duration-ms="6100" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:tests.Login@71e693fa]" started-at="2022-10-23T15:41:51Z" name="login" data-provider="getData" finished-at="2022-10-23T15:42:46Z" duration-ms="54867" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,99 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Login@4f6f416f]" started-at="2022-10-23T12:31:55Z" name="tearDown" finished-at="2022-10-23T12:31:57Z" duration-ms="2792" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Login@71e693fa]" started-at="2022-10-23T15:42:46Z" name="tearDown" finished-at="2022-10-23T15:42:48Z" duration-ms="2439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.Login -->
-      <class name="tests.SearchAndAddToCart">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SearchAndAddToCart@3b8f0a79]" started-at="2022-10-23T12:31:57Z" name="launchApplication" finished-at="2022-10-23T12:32:08Z" duration-ms="10611" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="searchAndAddToCart(java.util.HashMap)[pri:0, instance:tests.SearchAndAddToCart@3b8f0a79]" started-at="2022-10-23T12:32:08Z" name="searchAndAddToCart" data-provider="getData" finished-at="2022-10-23T12:32:25Z" duration-ms="16972" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Nerist@123, product=iPhone, email=arup.ach@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
-  (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DELL', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33de5ac5679738e3bcf2f923d9502557, findElement {using=id, value=twotabsearchtextbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Arup Acharya\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62556/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 33de5ac5679738e3bcf2f923d9502557]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
-  (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DELL', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33de5ac5679738e3bcf2f923d9502557, findElement {using=id, value=twotabsearchtextbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Arup Acharya\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62556/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 33de5ac5679738e3bcf2f923d9502557
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
-at pageobjects.ProductCatalogue.getProductByName(ProductCatalogue.java:52)
-at pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:63)
-at tests.SearchAndAddToCart.searchAndAddToCart(SearchAndAddToCart.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAndAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchAndAddToCart@3b8f0a79]" started-at="2022-10-23T12:32:26Z" name="tearDown" finished-at="2022-10-23T12:32:27Z" duration-ms="1449" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.SearchAndAddToCart -->
     </test> <!-- Login -->
   </suite> <!-- Suite -->
 </testng-results>

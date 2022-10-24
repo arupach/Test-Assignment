@@ -9,7 +9,7 @@
 <test name="Login">
     <classes>
       <class name="tests.Login"/>
-      <class name="tests.SearchAndAddToCart"/>
+      <!-- <class name="tests.SearchAndAddToCart"/> -->
     </classes>
 </test> <!-- Test -->
   

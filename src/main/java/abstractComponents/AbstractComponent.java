@@ -22,11 +22,11 @@ public class AbstractComponent {
 		
 	}
 	
-	@FindBy(css = "[routerlink*='cart']")
-	WebElement cartHeader;
-	
-	@FindBy(css = "[routerlink*='myorders']")
-	WebElement orderHeader;
+	/*
+	 * @FindBy(css = "[routerlink*='cart']") WebElement cartHeader;
+	 * 
+	 * @FindBy(css = "[routerlink*='myorders']") WebElement orderHeader;
+	 */
 
 
 	public void waitForElementToAppear(By findBy) {

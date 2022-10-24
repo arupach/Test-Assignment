@@ -5,18 +5,22 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import abstractComponents.AbstractComponent;
+
 
 public class LandingPage extends AbstractComponent{
 
 	WebDriver driver;
-	
+	public static Logger log =LogManager.getLogger(AbstractComponent.class.getName());
 	public LandingPage(WebDriver driver)
 	{
 		super(driver);
@@ -47,6 +51,9 @@ public class LandingPage extends AbstractComponent{
 	@FindBy(id="nav-link-accountList-nav-line-1")
 	WebElement SignOn;
 	
+	@FindBy(id="nav-link-accountList-nav-line-1")
+	WebElement AccountDetails;
+	
 	
 	
 	public  void loginApplication(String email,String password)
@@ -57,6 +64,9 @@ public class LandingPage extends AbstractComponent{
 		passwordele.sendKeys(password);
 		submit.click();
 		
+		String accDetails = AccountDetails.getText();
+		Assert.assertTrue(accDetails.equalsIgnoreCase("Hello, Arup"));
+		log.info("Successfully logged in to Amazon site");
 	}
 	
 	public void goTo() throws IOException

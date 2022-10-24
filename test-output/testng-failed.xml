@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" parallel="tests" name="Login(failed)">
     <classes>
-      <class name="tests.SearchAndAddToCart">
+      <class name="tests.Login">
         <methods>
           <include name="tearDown"/>
           <include name="launchApplication"/>
-          <include name="searchAndAddToCart" invocation-numbers="0"/>
+          <include name="login" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.SearchAndAddToCart -->
+      </class> <!-- tests.Login -->
     </classes>
   </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [Suite] -->
